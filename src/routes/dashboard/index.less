@@ -1,0 +1,80 @@
+.dashboard{
+  position: relative;
+  :global {
+    .ant-card {
+      border-radius: 0;
+      margin-bottom: 24px;
+      &:hover{
+        box-shadow: 4px 4px 40px rgba(0,0,0,.05);
+      }
+    }
+    .ant-card-body{
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  }
+
+/*  .weather {
+    &:hover {
+      box-shadow: 4px 4px 40px rgba(143,201,251,.6);
+    }
+  }*/
+
+  .quote {
+    &:hover {
+      box-shadow: 4px 4px 40px rgba(246,152,153,.6);
+    }
+  }
+}
+.weather {
+  color: #fff;
+  height: 204px;
+  padding: 24px;
+  justify-content: space-between;
+  display: flex;
+  font-size: 14px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 64px;
+    padding-top: 55px;
+
+    .icon {
+      width: 64px;
+      height: 64px;
+      background-position: center;
+      background-size: contain;
+    }
+
+    p {
+      margin-top: 16px;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+
+    .temperature {
+      font-size: 36px;
+      text-align: right;
+      height: 64px;
+      color: #fff;
+    }
+
+    .description {
+      //overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: right;
+    }
+    .nowdate {
+      //overflow: hidden;
+      //text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: left;
+    }
+  }
+}

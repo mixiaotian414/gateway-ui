@@ -1,0 +1,6 @@
+{
+  "name": "GifButton",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./GifButton.js"
+}
